@@ -1,0 +1,18 @@
+{
+  "name": "ts-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "typescript": "^3.6.2"
+  },
+  "scripts": {
+    "build": "yarn run tsc && node add_js_extensions_to_imports && node compile_html",
+    "serve": "yarn run build && yarn run http-server"
+  },
+  "dependencies": {
+    "@types/underscore": "^1.9.2",
+    "underscore": "^1.9.1"
+  }
+}
