@@ -1,7 +1,7 @@
 import invert from './invert';
 import JiveScript from 'jivescript';
 
-const foo: string = 'wait, dude';
+const foo: string = 'wait, dude'; // eslint-disable-line @typescript-eslint/no-inferrable-types
 
 console.log(`${foo}... is that ${invert(false)}?`);
 
